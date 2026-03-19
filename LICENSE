@@ -1,0 +1,161 @@
+                    GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public License,
+with additional permissions and obligations. The Lesser General Public
+License is designed primarily for software libraries, although it can be
+used for any kind of work. If you use the library in a program, you may
+redistribute the resulting combined work under terms of your choice,
+provided that the library itself is not modified. If you modify the
+library, you must make the modified version available under this same
+library license.
+
+  TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU Lesser General Public
+License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Library" refers to a covered work governed by this License, other
+than an Application or a Combined Work as defined below.
+
+  "The Library" is also used to refer to a covered work governed by this
+License.
+
+  "You" means an individual or a legal entity exercising rights under
+this License.  Your "responsible party" is the entity obliged to
+provide warranty information under this License.
+
+  "Source code" means the preferred form of the work for making
+modifications to it.  "Object code" means any non-source form of a work.
+
+  "Exception" means a permission added to this License by the copyright
+holder.
+
+  "Effective technological measures" means those measures that, in the
+ordinary course of their operation, prevent the user from doing
+something that the user is otherwise permitted to do under this
+License.
+
+  "Application" means any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+
+  "Combined Work" means a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  "Minimal Corresponding Source" means the least amount of Source
+Code needed to modify the Combined Work with respect to the use of the
+Library, including the Source Code for shared libraries and dynamically
+linked modules that the Combined Work is specifically designed to use,
+and the Source Code for the portions of the Combined Work that
+satisfy the requirements of section 6 of this License.
+
+  "Corresponding Application Code" means all the code that is used to
+produce the Combined Work, excluding the portions of that code that
+contain the Library.
+
+  1. Exception to Section 3 of the GNU General Public License.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU General Public License.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version without restriction under this License, provided that you also
+meet all of these conditions:
+
+    a) The modified work must itself be a software library.
+
+    b) You must cause the files modified to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    c) You must cause the whole of the work to be licensed at no charge
+    to all third parties under the terms of this License.
+
+    d) If a facility in the modified Library refers to a function or
+data to be supplied by an Application, the object code for the
+modified Library may still be conveyed under the terms of section 4,
+provided that you make a good faith effort to ensure that, in the
+event an Application does not supply such function or data, the
+facility still operates, and performs whatever part of its purpose
+remains meaningful.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+header files that are part of the Library.  You may convey such object
+code under terms of your choice, provided that you also meet the terms
+of this License in regard to the material from the Library contained in
+such object code.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that, taken
+collectively, give you permission to convey the whole of the Combined
+Work, provided that you also meet the requirements of this License for
+the part of the Combined Work that is the Library.
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the Library
+side by side in a single library together with other library facilities
+not covered by this License, and convey such a combined library under
+terms of your choice, if you do both of the following:
+
+    a) Accompany the combined library with a copy of the same work
+    based on the Library, uncombined with any other library
+    facilities.
+
+    b) Give prominent notice with each copy of the combined library
+    that the Library is used in it and that the Library and its
+    use are covered by this License.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU Lesser General Public License from time to time.  Such new
+versions will be similar in spirit to the present version, but may
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Library specifies that a certain numbered version of the License "or
+any later version" applies to it, you have the option of following the
+terms and conditions either of that version or of any later version that
+has been published by the Free Software Foundation.
+
+  If the Library does not specify a version number of this License, you
+may choose any version ever published by the Free Software Foundation.
+
+  7. Disclaimer of Warranty.
+
+  THE LIBRARY IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+  8. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR
+CONVEYS THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES
+ARISING OUT OF THE USE OR INABILITY TO USE THE LIBRARY (INCLUDING
+BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR
+LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE
+LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF SUCH HOLDER OR
+OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
