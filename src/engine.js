@@ -701,13 +701,14 @@ export class FluxPlayerEngine {
       });
 
       const cdnVersion = '0.12.10';
-      const cdnBases = [
+      const baseCandidates = [
+        `${window.location.origin}/ffmpeg`,
         `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist/umd`,
         `https://cdn.jsdelivr.net/npm/@ffmpeg/core@${cdnVersion}/dist/umd`,
       ];
 
       let lastErr = null;
-      for (const basePath of cdnBases) {
+      for (const basePath of baseCandidates) {
         try {
           const coreURL = await toBlobURL(`${basePath}/ffmpeg-core.js`, 'text/javascript');
           const wasmURL = await toBlobURL(`${basePath}/ffmpeg-core.wasm`, 'application/wasm');
