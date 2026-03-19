@@ -700,7 +700,11 @@ export class FluxPlayerEngine {
         if (this._ffmpegLogLines.length > 1000) this._ffmpegLogLines.shift();
       });
 
-      const basePath = `${window.location.origin}/ffmpeg`;
+      const cdnVersion = '0.12.10';
+      const localBase = `${window.location.origin}/ffmpeg`;
+      const cdnBase = `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist`;
+      const basePath = import.meta.env.PROD ? cdnBase : localBase;
+
       const coreURL = await toBlobURL(`${basePath}/ffmpeg-core.js`, 'text/javascript');
       const wasmURL = await toBlobURL(`${basePath}/ffmpeg-core.wasm`, 'application/wasm');
 
