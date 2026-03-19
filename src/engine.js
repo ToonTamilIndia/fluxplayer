@@ -705,6 +705,8 @@ export class FluxPlayerEngine {
         `${window.location.origin}/ffmpeg`,
         `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist/umd`,
         `https://cdn.jsdelivr.net/npm/@ffmpeg/core@${cdnVersion}/dist/umd`,
+        `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist/esm`,
+        `https://cdn.jsdelivr.net/npm/@ffmpeg/core@${cdnVersion}/dist/esm`,
       ];
 
       let lastErr = null;
