@@ -701,13 +701,28 @@ export class FluxPlayerEngine {
       });
 
       const cdnVersion = '0.12.10';
-      const cdnBase = `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist/umd`;
-      const basePath = cdnBase;
+      const cdnBases = [
+        `https://unpkg.com/@ffmpeg/core@${cdnVersion}/dist/umd`,
+        `https://cdn.jsdelivr.net/npm/@ffmpeg/core@${cdnVersion}/dist/umd`,
+      ];
 
-      const coreURL = await toBlobURL(`${basePath}/ffmpeg-core.js`, 'text/javascript');
-      const wasmURL = await toBlobURL(`${basePath}/ffmpeg-core.wasm`, 'application/wasm');
+      let lastErr = null;
+      for (const basePath of cdnBases) {
+        try {
+          const coreURL = await toBlobURL(`${basePath}/ffmpeg-core.js`, 'text/javascript');
+          const wasmURL = await toBlobURL(`${basePath}/ffmpeg-core.wasm`, 'application/wasm');
 
-      await this.ffmpeg.load({ coreURL, wasmURL });
+          await this.ffmpeg.load({ coreURL, wasmURL });
+          lastErr = null;
+          break;
+        } catch (err) {
+          lastErr = err;
+        }
+      }
+
+      if (lastErr) {
+        throw lastErr;
+      }
 
       this.ffmpegLoaded = true;
       this.emit('ffmpegStatus', { available: true, message: 'FFmpeg ready' });
@@ -718,7 +733,7 @@ export class FluxPlayerEngine {
       this.ffmpeg = null;
       this.emit('ffmpegStatus', {
         available: false,
-        message: 'FFmpeg unavailable',
+        message: `FFmpeg unavailable: ${err?.message || err}`,
       });
       return false;
     }
