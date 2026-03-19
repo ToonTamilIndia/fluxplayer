@@ -2,6 +2,8 @@
 
 FluxPlayer is a modern web-based media player designed for high-compatibility playback of MKV, MP4, HLS and other formats in the browser. It includes an MKV demuxer + remuxer pipeline that can stream MKV content through Media Source Extensions (MSE) and a fallback path that uses FFmpeg WebAssembly to remux unsupported formats.
 
+> **AI Disclaimer:** This project contains content created or edited with AI assistance. Review and validate all functionality before production use.
+
 ## Features
 
 - Native playback of MP4/WebM/HLS in supported browsers
